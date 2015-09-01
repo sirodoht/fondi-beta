@@ -1,6 +1,7 @@
 @import "variables.less";
 @import "mixins.less";
 
+
 // Global Components
 html,
 body {
@@ -10,6 +11,7 @@ body {
 
 body {
     .serif-font;
+    background-color: @theme-primary;
 }
 
 hr {
@@ -61,10 +63,24 @@ p {
 
 section {
     padding: 100px 0;
+    background-color: #fff;
 }
 
 aside {
     padding: 50px 0;
+}
+
+footer {
+    padding: 7px 0;
+    a {
+        .transition-all;
+        color: #fff;;
+        &:hover,
+        &:focus {
+            color: darken(#fff, 10%);
+            text-decoration: underline;
+        }
+    }
 }
 
 .no-padding {
@@ -80,9 +96,10 @@ aside {
     .transition-all;
     .navbar-header .navbar-brand {
         color: @theme-primary;
-        .sans-serif-font;
-        font-weight: 700;
-        text-transform: uppercase;
+        // .sans-serif-font;
+        .cursive-font;
+        // font-weight: 700;
+        // text-transform: uppercase;
         &:hover,
         &:focus {
             color: darken(@theme-primary, 10%);
@@ -114,9 +131,12 @@ aside {
     }
     @media (min-width: 768px) {
         background-color: transparent;
-        border-color: fade(white, 30%);
+        // border-color: fade(white, 30%);
         .navbar-header .navbar-brand {
-            color: fade(white, 70%);
+            // color: fade(white, 70%);
+            // text-shadow: 0 0 3px rgba(255, 255, 255, .3);
+            text-shadow: rgba(0, 0, 0, 1);
+            color: #fff;
             &:hover,
             &:focus {
                 color: white;
@@ -124,7 +144,10 @@ aside {
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: fade(white, 70%);
+            // color: fade(white, 70%);
+            // text-shadow: 0 0 3px rgba(255, 255, 255, .3);
+            text-shadow: rgba(0, 0, 0, 1);
+            color: #fff;
             &:hover {
                 color: white;
             }
@@ -173,15 +196,17 @@ header {
                 text-transform: uppercase;
                 margin-top: 0;
                 margin-bottom: 0;
+                text-shadow: 0 0 15px rgba(0, 0, 0, 1);;
             }
             hr {
                 margin: 30px auto;
             }
             p {
                 font-weight: 300;
-                color: fade(white, 70%);
+                // color: fade(white, 70%);
                 font-size: 16px;
                 margin-bottom: 50px;
+                text-shadow: 0 0 10px rgba(0, 0, 0, 1);;
             }
         }
     }
@@ -231,6 +256,7 @@ header {
     display: block;
     max-width: 650px;
     margin: 0 auto;
+    cursor: default;
     .portfolio-box-caption {
         color: white;
         opacity: 0;
