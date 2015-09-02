@@ -15,8 +15,10 @@
 
 .button-variant(@color; @background; @border) {
 	color: @color;
-	background-color: @background;
+	// background-color: @background;
+	background-color: transparent;
 	border-color: @border;
+  border-width: 1px;
 	.transition-all;
 
 	&:hover,

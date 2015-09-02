@@ -16,12 +16,12 @@ body {
 
 hr {
     border-color: @theme-primary;
-    border-width: 3px;
+    border-width: 1px;
     max-width: 50px;
 }
 
 hr.light {
-    border-color: white;
+    border-color: #fff;
 }
 
 a {
@@ -40,6 +40,7 @@ h4,
 h5,
 h6 {
     .sans-serif-font;
+    font-weight: 300;
 }
 
 p {
@@ -54,11 +55,11 @@ p {
 
 .bg-dark {
     background-color: @theme-dark;
-    color: white;
+    color: #fff;
 }
 
 .text-faded {
-    color: fade(white, 70%);
+    color: fade(#fff, 70%);
 }
 
 section {
@@ -90,7 +91,7 @@ footer {
 // Navigation
 
 .navbar-default {
-    background-color: white;
+    background-color: #fff;
     border-color: fade(@theme-dark, 5%);
     .sans-serif-font;
     .transition-all;
@@ -98,6 +99,8 @@ footer {
         color: @theme-primary;
         // .sans-serif-font;
         .cursive-font;
+        font-size: 28px;
+        // line-height: 20px;
         // font-weight: 700;
         // text-transform: uppercase;
         &:hover,
@@ -110,7 +113,7 @@ footer {
             > a,
             > a:focus {
                 text-transform: uppercase;
-                font-weight: 700;
+                // font-weight: 700;
                 font-size: 13px;
                 color: @theme-dark;
                 &:hover {
@@ -131,29 +134,29 @@ footer {
     }
     @media (min-width: 768px) {
         background-color: transparent;
-        // border-color: fade(white, 30%);
+        // border-color: fade(#fff, 30%);
         .navbar-header .navbar-brand {
-            // color: fade(white, 70%);
+            // color: fade(#fff, 70%);
             // text-shadow: 0 0 3px rgba(255, 255, 255, .3);
             text-shadow: rgba(0, 0, 0, 1);
             color: #fff;
             &:hover,
             &:focus {
-                color: white;
+                color: #fff;
             }
         }
         .nav > li > a,
         .nav > li > a:focus {
-            // color: fade(white, 70%);
+            // color: fade(#fff, 70%);
             // text-shadow: 0 0 3px rgba(255, 255, 255, .3);
             text-shadow: rgba(0, 0, 0, 1);
             color: #fff;
             &:hover {
-                color: white;
+                color: #fff;
             }
         }
         &.affix {
-            background-color: white;
+            background-color: #fff;
             border-color: fade(@theme-dark, 5%);
             .navbar-header .navbar-brand {
                 color: @theme-primary;
@@ -184,7 +187,7 @@ header {
     background-position: center;
     background-image: url('../img/header.jpg');
     text-align: center;
-    color: white;
+    color: #fff;
     .header-content {
         position: relative;
         text-align: center;
@@ -192,18 +195,17 @@ header {
         width: 100%;
         .header-content-inner {
             h1 {
-                font-weight: 700;
                 text-transform: uppercase;
                 margin-top: 0;
                 margin-bottom: 0;
-                text-shadow: 0 0 15px rgba(0, 0, 0, 1);;
+                text-shadow: 0 0 25px rgba(0, 0, 0, 1);;
             }
             hr {
                 margin: 30px auto;
             }
             p {
                 font-weight: 300;
-                // color: fade(white, 70%);
+                // color: fade(#fff, 70%);
                 font-size: 16px;
                 margin-bottom: 50px;
                 text-shadow: 0 0 10px rgba(0, 0, 0, 1);;
@@ -258,7 +260,7 @@ header {
     margin: 0 auto;
     cursor: default;
     .portfolio-box-caption {
-        color: white;
+        color: #fff;
         opacity: 0;
         display: block;
         background: fade(@theme-primary, 90%);
@@ -320,24 +322,25 @@ header {
 }
 
 .no-gutter > [class*='col-'] {
-    padding-right:0;
-    padding-left:0;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 // Button Styles
 .btn-default {
-    .button-variant(@theme-dark;white;white);
+    .button-variant(@theme-primary;#fff;#fff);
+    color: #fff;
 }
 
 .btn-primary {
-    .button-variant(white;@theme-primary;@theme-primary);
+    .button-variant(#fff;@theme-primary;@theme-primary);
 }
 
 .btn {
     .sans-serif-font;
-    border: none;
+    // border: none;
     border-radius: 300px;
-    font-weight: 700;
+    // font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -348,24 +351,24 @@ header {
 // Extras
 // -- Highlight Color Customization
 ::-moz-selection {
-    color: white;
+    color: #fff;
     text-shadow: none;
     background: @theme-dark;
 }
 
 ::selection {
-    color: white;
+    color: #fff;
     text-shadow: none;
     background: @theme-dark;
 }
 
 img::selection {
-    color: white;
+    color: #fff;
     background: transparent;
 }
 
 img::-moz-selection {
-    color: white;
+    color: #fff;
     background: transparent;
 }
 
