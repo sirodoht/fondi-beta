@@ -40,6 +40,7 @@ h5,
 h6 {
   .sans-serif-font;
   font-weight: 300;
+  line-height: 1.3;
 }
 
 p {
@@ -54,6 +55,19 @@ p {
 
 .bg-dark {
   background-color: @theme-dark;
+  color: #fff;
+}
+
+.bg-image {
+  background-image: url(../img/notes.jpg);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  line-height: 38px;
+  // position: relative;
+  // width: 100%;
+  // min-height: auto;
+  .background-cover;
+  // background-position: center;
+  // text-align: center;
   color: #fff;
 }
 
@@ -110,7 +124,7 @@ footer {
     }
   }
 
-.nav {
+  .nav {
     > li {
       > a,
       > a:focus {
@@ -124,7 +138,7 @@ footer {
         }
       }
 
-&.active {
+      &.active {
         > a,
         > a:focus {
           color: @theme-primary !important;
@@ -153,7 +167,7 @@ footer {
       }
     }
 
-.nav > li > a,
+    .nav > li > a,
     .nav > li > a:focus {
 
       // color: fade(#fff, 70%);
@@ -165,7 +179,7 @@ footer {
       }
     }
 
-&.affix {
+    &.affix {
       background-color: #fff;
       border-color: fade(@theme-dark, 5%);
       .navbar-header .navbar-brand {
@@ -177,7 +191,7 @@ footer {
         }
       }
 
-.nav > li > a,
+      .nav > li > a,
       .nav > li > a:focus {
         color: @theme-dark;
         &:hover {
@@ -212,11 +226,11 @@ header {
         text-shadow: 0 0 25px rgba(0, 0, 0, 1);
       }
 
-hr {
+      hr {
         margin: 30px auto;
       }
 
-p {
+      p {
         font-weight: 300;
 
         // color: fade(#fff, 70%);
@@ -264,7 +278,7 @@ p {
     margin: 20px auto 0;
   }
 
-p {
+  p {
     margin-bottom: 0;
   }
 }
@@ -298,19 +312,19 @@ p {
         padding: 0 15px;
       }
 
-.project-category {
+      .project-category {
         text-transform: uppercase;
         font-weight: 600;
         font-size: 14px;
       }
 
-.project-name {
+      .project-name {
         font-size: 18px;
       }
     }
   }
 
-&:hover {
+  &:hover {
     .portfolio-box-caption {
       opacity: 1;
     }
@@ -323,7 +337,7 @@ p {
           font-size: 16px;
         }
 
-.project-name {
+        .project-name {
           font-size: 22px;
         }
       }
