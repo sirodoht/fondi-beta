@@ -59,15 +59,11 @@ p {
 }
 
 .bg-image {
-  background-image: url(../img/notes.jpg);
+  background-image: url(../img/book.jpg);
+  .background-cover;
+  background-position: center;
   text-shadow: 0 0 10px rgba(0, 0, 0, 1);
   line-height: 38px;
-  // position: relative;
-  // width: 100%;
-  // min-height: auto;
-  .background-cover;
-  // background-position: center;
-  // text-align: center;
   color: #fff;
 }
 
@@ -88,11 +84,11 @@ footer {
   padding: 7px 0;
   a {
     .transition-all;
+    text-decoration: underline;
     color: #fff;
     &:hover,
     &:focus {
       color: darken(#fff, 10%);
-      text-decoration: underline;
     }
   }
 }
@@ -430,7 +426,6 @@ input:-ms-input-placeholder {
 }
 
 
-// Extras
 // -- Highlight Color Customization
 ::-moz-selection {
   color: #fff;
