@@ -49,13 +49,13 @@ p {
 }
 .bg-image {
   background-image: url(../img/book.jpg);
-  text-shadow: 0 0 10px #000000;
-  line-height: 38px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
+  text-shadow: 0 0 10px #000000;
+  line-height: 38px;
   color: #fff;
 }
 .text-faded {
