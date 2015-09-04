@@ -352,6 +352,48 @@ header {
 }
 
 
+// Sign up form
+.form-control {
+  background: transparent;
+  border-color: #fff;
+  height: 50px;
+  .sans-serif-font;
+  font-size: 22px;
+  color: #fff;
+}
+
+.form-control:focus {
+  border-color: #fff;
+  background: rgba(255, 255, 255, .10);
+  box-shadow: 0 0 8px rgba(255, 255, 255, .75);
+}
+
+input::-webkit-input-placeholder {
+  color: lighten(@theme-primary, 20%) !important;
+}
+input::-moz-placeholder {
+  color: lighten(@theme-primary, 20%) !important;
+}
+input:-ms-input-placeholder {
+  color: lighten(@theme-primary, 20%) !important;
+}
+
+// Mailchimp
+.mce_inline_error {
+  border-color: darken(@theme-primary, 15%) !important;
+  background-color: transparent !important;
+  .sans-serif-font;
+  font-weight: 400 !important;
+  color: darken(@theme-primary, 15%) !important;
+}
+
+#mce-success-response,
+#mce-error-response {
+  padding-bottom: 15px !important;
+  .sans-serif-font;
+}
+
+
 // Bootstrap Overrides
 .text-primary {
   color: @theme-primary;
