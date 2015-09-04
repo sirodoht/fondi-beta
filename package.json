@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "fondi-beta",
+  "version": "1.0.0",
+  "dependencies": {
+    "browser-sync": "^2.8.2",
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "gulp-less": "^3.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "gulp less && node index.js"
+  },
+  "author": "sirodoht",
+  "license": "MIT"
+}
